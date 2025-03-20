@@ -39,3 +39,10 @@ for(i=0; i<teachers.length;i++){
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 let isTeachersEmpty = teachers.length === 0;
+let tEmpty = false;
+for(let i = 0; i<teachers.length;i++){
+  if(teachers[i] == ''){
+    tEmpty = true;
+  }
+}
+console.log(`L'array e' vuoto? ${tEmpty}`);
